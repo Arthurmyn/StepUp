@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StepUp — Онлайн‑курсы английского языка</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav__container">
+      <a href="#" class="nav__logo">StepUp</a>
+      <ul class="nav__links">
+        <li><a href="#about">О курсе</a></li>
+        <li><a href="#teacher">Преподаватель</a></li>
+        <li><a href="#reviews">Отзывы</a></li>
+        <li><a href="#pricing">Цены</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+      <a href="#cta" class="nav__cta btn btn--primary btn--sm">Записаться</a>
+      <button class="nav__burger" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <ul class="mobile-menu__links">
+      <li><a href="#about">О курсе</a></li>
+      <li><a href="#teacher">Преподаватель</a></li>
+      <li><a href="#reviews">Отзывы</a></li>
+      <li><a href="#pricing">Цены</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#cta" class="btn btn--primary">Записаться</a></li>
+    </ul>
+  </div>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero__bg">
+      <div class="hero__blob hero__blob--1"></div>
+      <div class="hero__blob hero__blob--2"></div>
+      <div class="hero__grid"></div>
+    </div>
+    <div class="hero__container">
+      <div class="hero__content">
+        <div class="hero__badge">
+          <span class="hero__badge-dot"></span>
+          Открыт набор
+        </div>
+        <h1 class="hero__title">
+          Начни говорить на <span class="gradient-text">английском</span> <br>за 30 часов</br>
+        </h1>
+        <p class="hero__subtitle">
+          Персональная программа и носители языка. Говорите с первого урока — 
+          без скучной грамматики и заучивания.
+        </p>
+        <ul class="hero__benefits">
+          <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Диагностика уровня + пробный урок — 990₸</li>
+          <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Персональный ментор</li>
+          <li><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M16.667 5L7.5 14.167 3.333 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg> Гибкий график занятий</li>
+        </ul>
+        <div class="hero__buttons">
+          <a href="#pricing" class="btn btn--primary btn--lg">Записаться на урок</a>
+          <a href="#about" class="btn btn--outline btn--lg">О курсе</a>
+        </div>
+      </div>
+      <div class="hero__image-wrap">
+        <div class="hero__blob-glow"></div>
+        <div class="hero__image">
+          <img src="images/logo.jpg" alt="Обучение английскому">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Running Line -->
+  <section class="marquee-wrap">
+    <div class="marquee">
+      <div class="marquee__track">
+        <div class="marquee__content">
+          <span>Cambridge</span><span>Oxford</span><span>British Council</span><span>IELTS</span><span>TOEFL</span>
+          <span>Netflix</span><span>Google</span><span>Spotify</span><span>Booking</span><span>TED</span>
+        </div>
+        <div class="marquee__content" aria-hidden="true">
+          <span>Cambridge</span><span>Oxford</span><span>British Council</span><span>IELTS</span><span>TOEFL</span>
+          <span>Netflix</span><span>Google</span><span>Spotify</span><span>Booking</span><span>TED</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- О курсе -->
+  <section class="section about" id="about">
+    <div class="container">
+      <h2 class="section__title">О курсе</h2>
+      <p class="section__subtitle">Три простых шага до первого разговора</p>
+      <div class="about__steps">
+        <div class="about__step scroll-reveal">
+          <div class="about__step-num">1</div>
+          <div class="about__step-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+          <h3>Пробный урок</h3>
+          <p>Определим ваш уровень английского, обсудим цели и покажем формат обучения.</p>
+        </div>
+        <div class="about__connector"></div>
+        <div class="about__step scroll-reveal">
+          <div class="about__step-num">2</div>
+          <div class="about__step-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></div>
+          <h3>Регулярные занятия</h3>
+          <p>2 урока в неделю с преподавателем. Говорите, слушайте, получайте обратную связь в реальном времени.</p>
+        </div>
+        <div class="about__connector"></div>
+        <div class="about__step scroll-reveal">
+          <div class="about__step-num">3</div>
+          <div class="about__step-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg></div>
+          <h3>Результат</h3>
+          <p>Через 3 месяца вы уверенно говорите на английском. Работа, путешествия, экзамены — вы готовы.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Преподаватель -->
+  <section class="section teacher" id="teacher">
+    <div class="container">
+      <div class="teacher__wrap">
+        <div class="teacher__photo-wrap">
+          <img src="images/Dinara.JPG" alt="Динара Медеубек" class="teacher__photo">
+        </div>
+        <div class="teacher__content">
+          <span class="teacher__label">автор курса</span>
+          <h2 class="teacher__name">Динара Медеубек</h2>
+          <ul class="teacher__list">
+            <li>Студентка Astana IT University</li>
+            <li>Обладательница призовых мест олимпиад по английскому языку</li>
+            <li>Сертификат IELTS - 7.0</li>
+            <li>Глубокий опыт академического и разговорного английского</li>
+            <li>Более 5 лет активной языковой практики и ежедневного использования языка</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section class="section reviews" id="reviews">
+    <div class="container">
+      <h2 class="section__title">Отзывы учеников</h2>
+      <p class="section__subtitle">Истории тех, кто уже заговорил</p>
+      <div class="reviews__grid">
+        <article class="review-card scroll-reveal">
+          <span class="review-card__quote">"</span>
+          <p>Нужен английский для поступления на магистратуру за границу. Сейчас продолжаю обучение в StepUp, уже стал увереннее писать эссе и говорить. Есть реальный прогресс, планирую дойти до уровня B2 и начать подготовку к IELTS.</p>
+          <div class="review-card__author">
+            <div class="review-card__avatar">АД</div>
+            <div>
+              <strong>Артур Д.</strong>
+              <span>Студент</span>
+            </div>
+          </div>
+          <div class="review-card__stars">★★★★★</div>
+        </article>
+        <article class="review-card scroll-reveal">
+          <span class="review-card__quote">"</span>
+          <p>Учусь здесь несколько недель и уже вижу прогресс. Раньше было сложно говорить, сейчас стало намного легче формулировать мысли на английском. Нравится формат мини-групп и поддержка преподавателя.</p>
+          <div class="review-card__author">
+            <div class="review-card__avatar">МД</div>
+            <div>
+              <strong>Даниал М.</strong>
+              <span>Студент</span>
+            </div>
+          </div>
+          <div class="review-card__stars">★★★★★</div>
+        </article>
+        <article class="review-card scroll-reveal">
+          <span class="review-card__quote">"</span>
+          <p>Учусь в StepUp уже почти месяц, пришел с очень базовым уровнем. Сейчас могу поддержать простой разговор и не боюсь говорить. Нравится, что группы маленькие и каждому уделяют внимание.</p>
+          <div class="review-card__author">
+            <div class="review-card__avatar">МС</div>
+            <div>
+              <strong>Максот С.</strong>
+              <span>Студент</span>
+            </div>
+          </div>
+          <div class="review-card__stars">★★★★★</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section pricing" id="pricing">
+    <div class="container">
+      <h2 class="section__title">Цены</h2>
+      <p class="section__subtitle">Выберите формат под ваши задачи</p>
+      <div class="pricing__grid">
+        <article class="price-card scroll-reveal">
+          <h3>Self-study</h3>
+          <p class="price-card__desc">Самостоятельное обучение</p>
+          <div class="price-card__price">
+            <span class="price-card__amount">10 000</span>
+            <span class="price-card__currency">₸</span>
+          </div>
+          <p class="price-card__alt">~1 600 ₽ / ~$20</p>
+          <ul class="price-card__features">
+            <li>Полная программа уровня (30–40 часов)</li>
+            <li>Структурированные материалы и списки слов</li>
+            <li>Упражнения, тесты и аудирование</li>
+            <li>Доступ на 2 месяца</li>
+            <li>Чёткий недельный план</li>
+          </ul>
+          <button type="button" class="btn btn--outline btn--block btn--xl price-card__btn" data-tariff="Self-study">Выбрать</button>
+        </article>
+        <article class="price-card price-card--popular scroll-reveal">
+          <span class="price-card__badge">Популярный</span>
+          <h3>Group</h3>
+          <p class="price-card__desc">Групповой формат</p>
+          <div class="price-card__price">
+            <span class="price-card__amount">15 000</span>
+            <span class="price-card__currency">₸</span>
+          </div>
+          <p class="price-card__alt">~2 400 ₽ / ~$30</p>
+          <ul class="price-card__features">
+            <li>От 4 до 8 человек в группе</li>
+            <li>2 онлайн-встречи в неделю (1 час)</li>
+            <li>Доступ к материалам через Google Classroom</li>
+            <li>Study Buddy</li>
+            <li>Speaking-клуб и проверка заданий</li>
+            <li>Сертификат при успешном завершении</li>
+          </ul>
+          <button type="button" class="btn btn--primary btn--block btn--xl price-card__btn" data-tariff="Group">Выбрать</button>
+        </article>
+        <article class="price-card scroll-reveal">
+          <h3>Individual</h3>
+          <p class="price-card__desc">Индивидуальный формат</p>
+          <div class="price-card__price">
+            <span class="price-card__amount">25 000</span>
+            <span class="price-card__currency">₸</span>
+          </div>
+          <p class="price-card__alt">~4 000 ₽ / ~$50</p>
+          <ul class="price-card__features">
+            <li>Занятия один на один</li>
+            <li>Гибкий график, 2–3 занятия в неделю</li>
+            <li>Персональный учебный план</li>
+            <li>Интенсивная разговорная практика</li>
+            <li>Подробная проверка письменных работ</li>
+            <li>Еженедельный отчёт о прогрессе</li>
+          </ul>
+          <button type="button" class="btn btn--outline btn--block btn--xl price-card__btn" data-tariff="Individual">Выбрать</button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal: Запись на тариф -->
+  <div class="modal" id="orderModal">
+    <div class="modal__overlay"></div>
+    <div class="modal__box">
+      <button type="button" class="modal__close" aria-label="Закрыть">&times;</button>
+      <h3 class="modal__title">Записаться на тариф «<span id="modalTariffName"></span>»</h3>
+      <p class="modal__subtitle">Оставьте контакты — свяжемся в WhatsApp и ответим на вопросы</p>
+      <form class="modal__form" id="orderForm">
+        <div class="modal__field">
+          <label for="orderName">Имя</label>
+          <input type="text" id="orderName" name="name" placeholder="Как вас зовут?" required>
+        </div>
+        <div class="modal__field">
+          <label for="orderPhone">Номер телефона</label>
+          <div class="modal__phone-wrap">
+            <select id="orderCountryCode" name="countryCode" class="modal__country-select">
+              <option value="7">🇰🇿 +7</option>
+              <option value="7">🇷🇺 +7</option>
+              <option value="1">🇺🇸 +1</option>
+              <option value="1">🇨🇦 +1</option>
+              <option value="44">🇬🇧 +44</option>
+              <option value="996">🇰🇬 +996</option>
+              <option value="998">🇺🇿 +998</option>
+              <option value="993">🇹🇲 +993</option>
+              <option value="992">🇹🇯 +992</option>
+              <option value="90">🇹🇷 +90</option>
+              <option value="86">🇨🇳 +86</option>
+              <option value="91">🇮🇳 +91</option>
+              <option value="49">🇩🇪 +49</option>
+              <option value="33">🇫🇷 +33</option>
+              <option value="380">🇺🇦 +380</option>
+              <option value="375">🇧🇾 +375</option>
+            </select>
+            <input type="tel" id="orderPhone" name="phone" placeholder="700 123 45 67" required>
+          </div>
+        </div>
+        <button type="submit" class="btn btn--primary btn--block btn--lg modal__submit">Отправить в WhatsApp</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- FAQ -->
+  <section class="section faq" id="faq">
+    <div class="container">
+      <h2 class="section__title">Частые вопросы</h2>
+      <div class="faq__list">
+        <div class="faq__item scroll-reveal">
+          <button class="faq__question">
+            <span>Есть ли рассрочка?</span>
+            <span class="faq__icon"></span>
+          </button>
+          <div class="faq__answer">
+            <p>Да. Для студентов из Казахстана доступна рассрочка через Kaspi или оплата в несколько этапов. Можно разделить платёж на 2 части. Для других стран подбираем удобный вариант перевода.</p>
+          </div>
+        </div>
+        <div class="faq__item scroll-reveal">
+          <button class="faq__question">
+            <span>С какого уровня можно начать?</span>
+            <span class="faq__icon"></span>
+          </button>
+          <div class="faq__answer">
+            <p>Обучение доступно для всех уровней — от Beginner до Advanced. Перед началом проводится диагностика уровня, после которой подбирается подходящий формат обучения.</p>
+          </div>
+        </div>
+        <div class="faq__item scroll-reveal">
+          <button class="faq__question">
+            <span>Как проходят занятия?</span>
+            <span class="faq__icon"></span>
+          </button>
+          <div class="faq__answer">
+            <p>Занятия проходят онлайн в Zoom. Доступны три формата обучения: Self-Study, групповые занятия и индивидуальные уроки. Все материалы и задания доступны через Google Classroom.</p>
+          </div>
+        </div>
+        <div class="faq__item scroll-reveal">
+          <button class="faq__question">
+            <span>Подготавливаете ли к экзаменам IELTS?</span>
+            <span class="faq__icon"></span>
+          </button>
+          <div class="faq__answer">
+            <p>Программа подготовки к IELTS находится в разработке и скоро будет доступна. Курс будет включать разбор всех секций экзамена, стратегии выполнения заданий и практику Speaking и Writing.</p>
+          </div>
+        </div>
+        <div class="faq__item scroll-reveal">
+          <button class="faq__question">
+            <span>Можно ли оплатить курс из другой страны?</span>
+            <span class="faq__icon"></span>
+          </button>
+          <div class="faq__answer">
+            <p>Да. Обучение полностью онлайн, поэтому оплату можно провести международным переводом. Мы подберём удобный способ оплаты для вашей страны.</p>
+          </div>
+        </div>
+        <div class="faq__item scroll-reveal">
+          <button class="faq__question">
+            <span>Как быстро я увижу результат?</span>
+            <span class="faq__icon"></span>
+          </button>
+          <div class="faq__answer">
+            <p>Наша программа построена по авторской системе «1 уровень за 30 часов». При регулярном посещении занятий и выполнении заданий студенты начинают говорить увереннее уже в первые недели и завершают уровень примерно за 1–2 месяца.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Запись на урок -->
+  <section class="cta" id="cta">
+    <div class="container">
+      <h2 class="cta__title">Записаться на первый урок</h2>
+      <p class="cta__subtitle">Напишите нам в WhatsApp — подберём удобное время и ответим на вопросы</p>
+      <a href="https://wa.me/77055532376?text=Здравствуйте!%20Хочу%20записаться%20на%20пробный%20урок%20английского" target="_blank" rel="noopener noreferrer" class="btn btn--white btn--lg cta__btn">
+        <svg class="cta__whatsapp-icon" viewBox="0 0 24 24" fill="currentColor" width="24" height="24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Записаться на пробный урок
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <a href="#" class="footer__logo">StepUp</a>
+        <div class="footer__links">
+          <div class="footer__col">
+            <h4>Обучение</h4>
+            <a href="#about">О курсе</a>
+            <a href="#teacher">Преподаватель</a>
+            <a href="#pricing">Цены</a>
+          </div>
+          <div class="footer__col">
+            <h4>Поддержка</h4>
+            <a href="#faq">FAQ</a>
+            <a href="#">Контакты</a>
+            <a href="#">Политика конфиденциальности</a>
+          </div>
+          <div class="footer__col">
+            <h4>Соцсети</h4>
+            <div class="footer__social">
+              <a href="https://t.me/stepup_eng" aria-label="Telegram">
+                <i class="fa-brands fa-telegram"></i>
+              </a>
+              <a href="https://www.instagram.com/stepup_study_school/" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              
+              <a href="https://wa.me/77055532376?text=Здравствуйте!%20Хочу%20записаться%20на%20пробный%20урок%20английского" aria-label="WhatsApp">
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2025 StepUp. Все права защищены.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
